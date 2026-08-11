@@ -2,7 +2,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-gray-100 py-16 px-6">
       <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
-        <h1 className="text-4xl font-bold text-center text-blue-600 mb-6">
+        <h1 className="text-4xl font-bold text-center text-green-600 mb-6">
           Contact Us
         </h1>
 
@@ -19,7 +19,7 @@ export default function ContactPage() {
             <input
               type="text"
               placeholder="Enter your full name"
-              className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
           </div>
 
@@ -30,7 +30,7 @@ export default function ContactPage() {
             <input
               type="email"
               placeholder="example@gmail.com"
-              className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
           </div>
 
@@ -41,7 +41,7 @@ export default function ContactPage() {
             <input
               type="text"
               placeholder="Subject"
-              className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
           </div>
 
@@ -53,13 +53,13 @@ export default function ContactPage() {
             <textarea
               rows={6}
               placeholder="Write your message..."
-              className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition"
+            className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition"
           >
             Send Message
           </button>
