@@ -45,11 +45,10 @@ const Navbar = () => {
                 <li key={link.key}>
                   <Link
                     href={link.href}
-                    className={`relative py-2 text-[16px] font-semibold transition-all duration-300 ${
-                      isActive
-                        ? "text-green-90"
-                        : "text-gray-600 hover:text-green-90"
-                    }`}
+                    className={`relative py-2 text-[16px] font-semibold transition-all duration-300 ${isActive
+                      ? "text-green-90"
+                      : "text-gray-600 hover:text-green-90"
+                      }`}
                   >
                     {link.label}
 
@@ -64,14 +63,7 @@ const Navbar = () => {
           </ul>
 
           {/* DESKTOP CTA */}
-          <div className="hidden lg:block">
-            <Link
-              href="/sign-up"
-              className="rounded-full bg-green-90 px-6 py-3 font-semibold text-white transition-all duration-300 hover:bg-black"
-            >
-              Get Started
-            </Link>
-          </div>
+
 
           {/* MOBILE MENU BUTTON */}
           <button
@@ -119,11 +111,10 @@ const Navbar = () => {
 
         {/* MOBILE NAVIGATION */}
         <div
-          className={`overflow-hidden transition-all duration-300 lg:hidden ${
-            isMenuOpen
-              ? "max-h-[500px] pb-6 opacity-100"
-              : "max-h-0 opacity-0"
-          }`}
+          className={`overflow-hidden transition-all duration-300 lg:hidden ${isMenuOpen
+            ? "max-h-[500px] pb-6 opacity-100"
+            : "max-h-0 opacity-0"
+            }`}
         >
           <ul className="flex flex-col gap-2 border-t border-gray-100 pt-4">
             {NAV_LINKS.map((link) => {
@@ -137,11 +128,10 @@ const Navbar = () => {
                   <Link
                     href={link.href}
                     onClick={closeMenu}
-                    className={`flex items-center justify-between rounded-xl px-5 py-4 text-[16px] font-semibold transition-all duration-300 ${
-                      isActive
-                        ? "bg-green-90 text-white"
-                        : "text-gray-700 hover:bg-green-50 hover:text-white"
-                    }`}
+                    className={`flex items-center justify-between rounded-xl px-5 py-4 text-[16px] font-semibold transition-all duration-300 ${isActive
+                      ? "bg-green-90 text-white"
+                      : "text-gray-700 hover:bg-green-50 hover:text-white"
+                      }`}
                   >
                     {link.label}
 
@@ -154,7 +144,7 @@ const Navbar = () => {
             {/* MOBILE CTA */}
             <li className="mt-2">
               <Link
-                href="/contact-us"
+                href="/sign-up"
                 onClick={closeMenu}
                 className="flex w-full items-center justify-center rounded-xl bg-green-50 px-6 py-4 font-semibold text-white transition-all duration-300 hover:bg-green-90"
               >

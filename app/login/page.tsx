@@ -9,7 +9,7 @@ export default function LoginPage() {
         
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-green-700">
-            Welcome Back 
+            Welcome Back 👋
           </h1>
 
           <p className="text-gray-500 mt-2">
@@ -66,7 +66,7 @@ export default function LoginPage() {
         <p className="text-center text-gray-600 mt-6">
           Don't have an account?{" "}
           <Link
-            href="/signup"
+            href="/sign-up"
             className="text-green-600 font-semibold hover:underline"
           >
             Sign Up
