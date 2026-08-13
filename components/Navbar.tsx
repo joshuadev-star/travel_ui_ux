@@ -66,7 +66,7 @@ const Navbar = () => {
           {/* DESKTOP CTA */}
           <div className="hidden lg:block">
             <Link
-              href="/contact-us"
+              href="/sign-up"
               className="rounded-full bg-green-90 px-6 py-3 font-semibold text-white transition-all duration-300 hover:bg-black"
             >
               Get Started
