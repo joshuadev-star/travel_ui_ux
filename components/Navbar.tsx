@@ -24,8 +24,8 @@ const Navbar = () => {
             className="flex items-center gap-2"
             onClick={closeMenu}
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-50 text-xl font-bold text-white">
-              H
+            <div>
+              <img src="/LOGO.png" alt="camp" width={100} height={105} />
             </div>
 
             <span className="text-2xl font-bold text-green-90">
