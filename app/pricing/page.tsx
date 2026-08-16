@@ -1,4 +1,4 @@
-import { Check, Star } from "lucide-react";
+import { Check } from "lucide-react";
 
 export default function PricingPage() {
   return (
@@ -16,14 +16,15 @@ export default function PricingPage() {
 
         {/* PRICING CARDS */}
         <div className="grid items-stretch gap-16 lg:grid-cols-3">
+
           {/* STARTER */}
-          <section className="relative flex min-h-[500px] flex-col rounded-4xl border border-gray-200 bg-white p-8 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
-            {/* PLAN LABEL */}
-            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-green-50">
+          <section className="relative flex min-h-[500px] flex-col rounded-4xl border border-gray-200 bg-white p-8 text-left shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
+
+            <p className="mb-4 text-center text-sm font-semibold uppercase tracking-wider text-green-50">
               Starter
             </p>
 
-            <h2 className="mb-4 text-5xl font-bold text-green-90">
+            <h2 className="mb-4 text-center text-5xl font-bold text-green-90">
               Free
             </h2>
 
@@ -31,7 +32,6 @@ export default function PricingPage() {
               Perfect for casual explorers who want to test the route planner.
             </p>
 
-            {/* FEATURES */}
             <ul className="mb-8 space-y-4 text-left text-gray-700">
               <li className="flex items-center gap-3">
                 <Check size={20} className="shrink-0 text-green-50" />
@@ -49,25 +49,20 @@ export default function PricingPage() {
               </li>
             </ul>
 
-            {/* BUTTON */}
-            <button className="mt-auto w-full rounded-xl border border-green-50 bg-white px-6 py-3 font-semibold text-green-90 transition hover:bg-green-50 hover:text-white">
+            {/* GET STARTED BUTTON */}
+            <button className="mt-auto w-full rounded-xl bg-green-50 px-6 py-3 font-semibold text-black transition hover:bg-green-90 hover:text-white">
               Get Started
             </button>
           </section>
 
           {/* PREMIUM */}
-          <section className="relative flex min-h-[530px] flex-col rounded-4xl border border-green-50 bg-green-50 p-8 text-center text-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl lg:-mt-5">
-            {/* POPULAR BADGE */}
-            <div className="absolute -top-7 left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full bg-black px-5 py-2 text-sm font-semibold text-white shadow-lg">
-              <Star size={16} fill="currentColor" />
-              Most Popular
-            </div>
+          <section className="relative flex min-h-[500px] flex-col rounded-4xl border border-green-50 bg-green-50 p-8 text-left text-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl">
 
-            <p className="mb-4 mt-4 text-sm font-semibold uppercase tracking-wider text-white/80">
+            <p className="mb-4 text-center text-sm font-semibold uppercase tracking-wider text-white/80">
               Popular
             </p>
 
-            <h2 className="mb-4 text-5xl font-bold">
+            <h2 className="mb-4 text-center text-5xl font-bold">
               Premium
             </h2>
 
@@ -94,20 +89,19 @@ export default function PricingPage() {
               </li>
             </ul>
 
-            {/* BUTTON */}
             <button className="mt-auto w-full rounded-xl bg-black px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-green-90">
               Start Free Trial
             </button>
           </section>
 
           {/* ENTERPRISE */}
-          <section className="relative flex min-h-[500px] flex-col rounded-4xl border border-gray-200 bg-white p-8 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
-            {/* PLAN LABEL */}
-            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-green-50">
+          <section className="relative flex min-h-[500px] flex-col rounded-4xl border border-gray-200 bg-white p-8 text-left shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
+
+            <p className="mb-4 text-center text-sm font-semibold uppercase tracking-wider text-green-50">
               Enterprise
             </p>
 
-            <h2 className="mb-4 text-5xl font-bold text-green-90">
+            <h2 className="mb-4 text-center text-5xl font-bold text-green-90">
               Custom
             </h2>
 
@@ -115,7 +109,6 @@ export default function PricingPage() {
               Ideal for groups, guides, and corporate adventure teams.
             </p>
 
-            {/* FEATURES */}
             <ul className="mb-8 space-y-4 text-left text-gray-700">
               <li className="flex items-center gap-3">
                 <Check size={20} className="shrink-0 text-green-50" />
@@ -133,11 +126,11 @@ export default function PricingPage() {
               </li>
             </ul>
 
-            {/* BUTTON */}
             <button className="mt-auto w-full rounded-xl border border-green-50 bg-white px-6 py-3 font-semibold text-green-90 transition hover:bg-green-50 hover:text-white">
               Contact Sales
             </button>
           </section>
+
         </div>
       </div>
     </main>
