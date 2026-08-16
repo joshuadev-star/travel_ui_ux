@@ -1,50 +1,145 @@
+import { Check, Star } from "lucide-react";
+
 export default function PricingPage() {
   return (
-    <main className="min-h-screen bg-gray-100 py-16 px-6">
-      <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-lg p-10">
-        <h1 className="text-5xl font-bold text-center text-green-90 mb-8">Pricing Plans</h1>
-        <p className="text-center text-gray-600 mb-10">
-          Choose the plan that fits your adventure needs. All plans include offline maps, schedule support, and immersive AR guidance.
+    <main className="min-h-screen bg-gray-100 px-6 py-16">
+      <div className="mx-auto max-w-6xl rounded-3xl bg-white p-6 shadow-lg sm:p-10">
+        {/* HEADING */}
+        <h1 className="mb-4 text-center text-4xl font-bold text-green-90 sm:text-5xl">
+          Pricing Plans
+        </h1>
+
+        <p className="mx-auto mb-20 max-w-2xl text-center text-gray-600">
+          Choose the plan that fits your adventure needs. All plans include
+          offline maps, schedule support, and immersive AR guidance.
         </p>
 
-        <div className="grid gap-8 lg:grid-cols-3">
-          <section className="rounded-4xl border border-gray-200 p-8 text-center shadow-sm">
-            <p className="text-sm font-semibold uppercase text-green-50 mb-4">Starter</p>
-            <h2 className="text-5xl font-bold text-green-90 mb-4">Free</h2>
-            <p className="text-gray-600 mb-8">Perfect for casual explorers who want to test the route planner.</p>
-            <ul className="space-y-3 text-left text-gray-700 mb-8">
-              <li>Offline map access</li>
-              <li>2 saved locations</li>
-              <li>Basic support</li>
+        {/* PRICING CARDS */}
+        <div className="grid items-stretch gap-16 lg:grid-cols-3">
+          {/* STARTER */}
+          <section className="relative flex min-h-[500px] flex-col rounded-4xl border border-gray-200 bg-white p-8 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
+            {/* PLAN LABEL */}
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-green-50">
+              Starter
+            </p>
+
+            <h2 className="mb-4 text-5xl font-bold text-green-90">
+              Free
+            </h2>
+
+            <p className="mb-8 text-gray-600">
+              Perfect for casual explorers who want to test the route planner.
+            </p>
+
+            {/* FEATURES */}
+            <ul className="mb-8 space-y-4 text-left text-gray-700">
+              <li className="flex items-center gap-3">
+                <Check size={20} className="shrink-0 text-green-50" />
+                Offline map access
+              </li>
+
+              <li className="flex items-center gap-3">
+                <Check size={20} className="shrink-0 text-green-50" />
+                2 saved locations
+              </li>
+
+              <li className="flex items-center gap-3">
+                <Check size={20} className="shrink-0 text-green-50" />
+                Basic support
+              </li>
             </ul>
-            <button className="btn_white text-green-90 w-full">Get Started</button>
+
+            {/* BUTTON */}
+            <button className="mt-auto w-full rounded-xl border border-green-50 bg-white px-6 py-3 font-semibold text-green-90 transition hover:bg-green-50 hover:text-white">
+              Get Started
+            </button>
           </section>
 
-          <section className="rounded-4xl border border-green-50 p-8 text-center shadow-sm bg-green-50 text-white">
-            <p className="text-sm font-semibold uppercase mb-4">Popular</p>
-            <h2 className="text-5xl font-bold mb-4">Premium</h2>
-            <p className="text-white/80 mb-8">Best for active travelers needing full route guidance and AR features.</p>
-            <ul className="space-y-3 text-left text-white/90 mb-8">
-              <li>Unlimited offline maps</li>
-              <li>Custom adventure schedules</li>
-              <li>AR navigation support</li>
+          {/* PREMIUM */}
+          <section className="relative flex min-h-[530px] flex-col rounded-4xl border border-green-50 bg-green-50 p-8 text-center text-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl lg:-mt-5">
+            {/* POPULAR BADGE */}
+            <div className="absolute -top-7 left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full bg-black px-5 py-2 text-sm font-semibold text-white shadow-lg">
+              <Star size={16} fill="currentColor" />
+              Most Popular
+            </div>
+
+            <p className="mb-4 mt-4 text-sm font-semibold uppercase tracking-wider text-white/80">
+              Popular
+            </p>
+
+            <h2 className="mb-4 text-5xl font-bold">
+              Premium
+            </h2>
+
+            <p className="mb-8 text-white/80">
+              Best for active travelers needing full route guidance and AR
+              features.
+            </p>
+
+            {/* FEATURES */}
+            <ul className="mb-8 space-y-4 text-left text-white">
+              <li className="flex items-center gap-3">
+                <Check size={20} className="shrink-0" />
+                Unlimited offline maps
+              </li>
+
+              <li className="flex items-center gap-3">
+                <Check size={20} className="shrink-0" />
+                Custom adventure schedules
+              </li>
+
+              <li className="flex items-center gap-3">
+                <Check size={20} className="shrink-0" />
+                AR navigation support
+              </li>
             </ul>
-            <button className="btn_dark_green w-full">Start Free Trial</button>
+
+            {/* BUTTON */}
+            <button className="mt-auto w-full rounded-xl bg-black px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-green-90">
+              Start Free Trial
+            </button>
           </section>
 
-          <section className="rounded-4xl border border-gray-200 p-8 text-center shadow-sm">
-            <p className="text-sm font-semibold uppercase text-green-50 mb-4">Enterprise</p>
-            <h2 className="text-5xl font-bold text-green-90 mb-4">Custom</h2>
-            <p className="text-gray-600 mb-8">Ideal for groups, guides, and corporate adventure teams.</p>
-            <ul className="space-y-3 text-left text-gray-700 mb-8">
-              <li>Team plans</li>
-              <li>Dedicated support</li>
-              <li>Custom adventure maps</li>
+          {/* ENTERPRISE */}
+          <section className="relative flex min-h-[500px] flex-col rounded-4xl border border-gray-200 bg-white p-8 text-center shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg">
+            {/* PLAN LABEL */}
+            <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-green-50">
+              Enterprise
+            </p>
+
+            <h2 className="mb-4 text-5xl font-bold text-green-90">
+              Custom
+            </h2>
+
+            <p className="mb-8 text-gray-600">
+              Ideal for groups, guides, and corporate adventure teams.
+            </p>
+
+            {/* FEATURES */}
+            <ul className="mb-8 space-y-4 text-left text-gray-700">
+              <li className="flex items-center gap-3">
+                <Check size={20} className="shrink-0 text-green-50" />
+                Team plans
+              </li>
+
+              <li className="flex items-center gap-3">
+                <Check size={20} className="shrink-0 text-green-50" />
+                Dedicated support
+              </li>
+
+              <li className="flex items-center gap-3">
+                <Check size={20} className="shrink-0 text-green-50" />
+                Custom adventure maps
+              </li>
             </ul>
-            <button className="btn_white text-green-90 w-full">Contact Sales</button>
+
+            {/* BUTTON */}
+            <button className="mt-auto w-full rounded-xl border border-green-50 bg-white px-6 py-3 font-semibold text-green-90 transition hover:bg-green-50 hover:text-white">
+              Contact Sales
+            </button>
           </section>
         </div>
       </div>
     </main>
-  )
+  );
 }
