@@ -27,8 +27,8 @@ const Navbar = () => {
             <img
               src="/LOGO.png"
               alt="camp"
-              width={200}
-              height={200}
+              width={150}
+              height={150}
             />
           </Link>
 
