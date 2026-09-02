@@ -135,4 +135,4 @@ export default function PricingPage() {
       </div>
     </main>
   );
-}/
+}
