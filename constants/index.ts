@@ -18,7 +18,7 @@ export const PEOPLE_URL = [
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: 'Real maps can be offline',
+    title: 'Real maps can actually be  offline',
     icon: '/map.svg',
     variant: 'green',
     description:
