@@ -26,7 +26,7 @@ export const FEATURES = [
   },
   {
     title: 'Set an adventure schedule',
-    icon: '/clipboard-clock.svg',
+    icon: '/calendar-check.svg',
     variant: 'green',
     description:
       "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
@@ -40,7 +40,7 @@ export const FEATURES = [
   },
   {
     title: 'Many new locations every month',
-    icon: '/map-pin-check-inside.svg',
+    icon: '/map-pin-house.svg',
     variant: 'orange',
     description:
       'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
