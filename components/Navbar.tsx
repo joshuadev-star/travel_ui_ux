@@ -16,12 +16,12 @@ const Navbar = () => {
   return (
     <nav className="relative z-50 w-full bg-white">
       <div className="max-container padding-container">
-        <div className="flex h-20 items-center justify-between">
-          
+        <div className="flex min-h-20 items-center justify-between gap-3">
+
           {/* LOGO */}
           <Link
             href="/"
-            className="flex items-center gap-2"
+            className="shrink-0"
             onClick={closeMenu}
           >
             <img
@@ -29,6 +29,7 @@ const Navbar = () => {
               alt="camp"
               width={150}
               height={150}
+              className="h-auto w-[105px] sm:w-[125px] lg:w-[150px]"
             />
           </Link>
 
@@ -52,7 +53,6 @@ const Navbar = () => {
                   >
                     {link.label}
 
-                    {/* ACTIVE INDICATOR */}
                     {isActive && (
                       <span className="absolute -bottom-1 left-0 h-[3px] w-full rounded-full bg-green-50" />
                     )}
@@ -63,18 +63,18 @@ const Navbar = () => {
           </ul>
 
           {/* RIGHT SIDE */}
-          <div className="flex items-center gap-3">
-            
-            {/* GET STARTED - VISIBLE ON EVERY SCREEN */}
+          <div className="flex shrink-0 items-center gap-2 sm:gap-3">
+
+            {/* GET STARTED */}
             <Link
-              href="/sign-up"
+              href="/signup"
               onClick={closeMenu}
-              className="whitespace-nowrap rounded-xl bg-green-50 px-4 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-90 sm:px-6 sm:text-base"
+              className="whitespace-nowrap rounded-xl bg-green-50 px-3 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-90 sm:px-6 sm:text-base"
             >
               Get Started
             </Link>
 
-            {/* MOBILE MENU BUTTON */}
+            {/* MOBILE MENU */}
             <button
               type="button"
               aria-label="Toggle navigation menu"
@@ -83,7 +83,6 @@ const Navbar = () => {
               className="flex h-11 w-11 items-center justify-center rounded-full bg-green-90 text-white transition-all duration-300 hover:bg-black lg:hidden"
             >
               {isMenuOpen ? (
-                /* X ICON */
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -99,7 +98,6 @@ const Navbar = () => {
                   />
                 </svg>
               ) : (
-                /* HAMBURGER ICON */
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -146,7 +144,6 @@ const Navbar = () => {
                     }`}
                   >
                     {link.label}
-
                     <span className="text-lg">→</span>
                   </Link>
                 </li>
