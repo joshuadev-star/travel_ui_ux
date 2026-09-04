@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="relative z-50 w-full bg-white">
-      <div className="max-container padding-container">
+      <div className="max-container padding-container pt-12 sm:pt-14 md:pt-16 lg:pt-8 xl:pt-6">
         <div className="flex min-h-20 items-center justify-between gap-3">
 
           {/* LOGO */}
@@ -27,14 +27,14 @@ const Navbar = () => {
             <img
               src="/LOGO.png"
               alt="camp"
-              width={150}
-              height={150}
-              className="h-auto w-[105px] sm:w-[125px] lg:w-[150px]"
+              width={200}
+              height={200}
+              className="h-auto w-[120px] sm:w-[140px] md:w-[155px] lg:w-[165px] xl:w-[175px]"
             />
           </Link>
 
           {/* DESKTOP NAVIGATION */}
-          <ul className="hidden items-center gap-8 lg:flex">
+          <ul className="hidden items-center gap-6 lg:flex xl:gap-8">
             {NAV_LINKS.map((link) => {
               const isActive =
                 link.href === "/"
@@ -67,9 +67,9 @@ const Navbar = () => {
 
             {/* GET STARTED */}
             <Link
-              href="/signup"
+              href="/auth/sign-up"
               onClick={closeMenu}
-              className="whitespace-nowrap rounded-xl bg-green-50 px-3 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-90 sm:px-6 sm:text-base"
+              className="whitespace-nowrap rounded-xl bg-green-50 px-3 py-3 text-sm font-semibold text-white transition-all duration-300 hover:bg-green-90 sm:px-5 sm:text-base md:px-6"
             >
               Get Started
             </Link>
